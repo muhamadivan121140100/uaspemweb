@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAS PEMWEB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>FORM PENDATAAN MAHASISWA INDONESIA</h1>
+        <form id="myForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <br>
+            <label for="checkbox">SUDAH MENGISI MESSAGE? :</label>
+            <input type="checkbox" id="checkbox" name="checkbox">
+            <br>
+            <label for="radio1">MAHASISWA ITERA :</label>
+            <input type="radio" id="radio1" name="radio" value="option1">
+            <label for="radio2">BUKAN MAHASISWA ITERA :</label>
+            <input type="radio" id="radio2" name="radio" value="option2">
+            <br>
+            <button type="submit">| SIMPAN |</button>
+        </form>
+
+        <h2>DATA YANG TERSIMPAN</h2>    
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Message</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="dataTableBody"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
